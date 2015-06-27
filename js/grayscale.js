@@ -175,4 +175,8 @@ function init() {
         map: map,
         icon: image
     });
+
+    google.maps.event.addListener(beachMarker, 'click', function() {
+        window.location = "https://www.google.com/maps/dir/Current+Location/42.676349, 23.319355"
+    });
 }
